@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".Ficha.FichaActivity"
+
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/valorPagamento"
+            android:text="Finalizando pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/black"
+            android:background="#ccddff"
+            android:gravity="center"
+            android:padding="30dp"/>
+
+<ProgressBar
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/printLoading"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+
+    >
+        <TextView
+                android:id="@+id/EdtTotal"
+                android:text="Total : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/black"
+
+                android:gravity="center"
+                />
+        <TextView
+                android:id="@+id/valorPagamentoFinal"
+                android:text="Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="36sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/black"
+
+                android:gravity="left"
+        />
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+    >
+        <TextView
+                android:id="@+id/quantorecebeu"
+                android:text="Quanto foi recebido ?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+
+        />
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:textSize="33sp"
+        >
+            <TextView
+
+                    android:text="R$ "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+
+                    android:gravity="center"
+            />
+
+            <EditText
+                    android:id="@+id/txtValorRecebido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="15dp"
+                    android:background="@drawable/shapeemail"
+                    android:drawablePadding="10dp"
+
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/whiteColor"
+                    android:textColorHighlight="@color/whiteColor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+
+    >
+        <TextView
+                android:id="@+id/ectTroco"
+                android:text="Troco : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:gravity="center"
+        />
+
+        <TextView
+                android:id="@+id/txttroco"
+                android:text="R$0,00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="36sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/black"
+
+                android:gravity="left"
+                android:padding="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+    >
+        <Switch
+                android:text="Impressora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/printSwitch"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/printInfo"
+                tools:text="Estado da Impressora"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:padding="20dp">
+
+        <Button
+                android:layout_width="match_parent"
+
+                android:text="Finalizar"
+                android:id="@+id/transactionButton"
+                android:shadowColor="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shapesignup"
+                android:textColor="@color/whiteColor"/>
+
+    </LinearLayout>
+</LinearLayout>
