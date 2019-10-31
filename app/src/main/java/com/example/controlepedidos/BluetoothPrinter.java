@@ -104,10 +104,10 @@ public class BluetoothPrinter {
     public boolean printUnicode(byte[] data) {
         try {
 
-            btOutputStream.write(ESC_ALIGN_CENTER );
+                btOutputStream.write(ESC_ALIGN_CENTER );
 
 
-            btOutputStream.write(data);
+                 btOutputStream.write(data);
             return true;
         } catch (IOException e) {
             e.printStackTrace();
